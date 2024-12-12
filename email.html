@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blockchain Voting System</title>
+
+
+</head>
+
+<nav class="navbar">
+     
+    
+        <div class="logo">
+           <h1> <p>Blockchain Voting System</h1>
+           </div>
+
+               
+           
+        <ul class="nav-links">
+        
+            <li><a href="index.html" class="nav-item" onclick="setActive(this)">Home</a></li>
+     <li><a href="u.html" class="nav-item" onclick="setActive(this)">Result</a></li>
+            <li><a href="sign.html" class="nav-item" onclick="setActive(this)">Login</a></li>
+            <li><a href="j.html" class="nav-item" onclick="setActive(this)">Admin</a></li>
+        </ul>
+        
+    </nav>
+
+   
+
+        <div class="container">
+            <h1>Enter your email to validate</h1>
+            <form action="/submit" method="post">
+                <!-- Input Filed to Validate Email Address --> 
+                <input placeholder="Enter your email to validate" type="text" id="username" name="username" required>
+                <br><br>
+                <!-- Submit button -->
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+              </form>
+        </div>
+
+        <div class="container">
+            <h2>Your Results</h2>
+            <div id="resultCont">
+                Your results will show here
+                
+            </div>
+    
+  
+    
+    <script src="js/i.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Blockchain Voting System. All rights reserved.</p>
+            <div class="social-media">
+               
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        function searchFunction() {
+            const query = document.getElementById('search-input').value;
+            alert("Search feature not implemented yet. Query: " + query);
+        }
+   
+     </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+     background-color:#121262 ;
+
+    color: white;
+    padding: 19px 12px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul >li> a:hover{
+    color: rgb(192, 189, 205);
+}
+
+main{
+    min-height: 100vh; 
+}
+
+
+.container{ 
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+
+.container h1{
+    padding: 12px 0;
+}
+
+input[type='text']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn{
+    background: rgb(57, 31, 129);
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+ .footer {
+           
+            color: #fff;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 14px;
+     margin-left: 0px;
+            bottom: 0;
+            width: 1470px;
+        
+        }
+        .footer-content {
+            max-width: 2000px;
+          text-align: center;
+            margin-left: 0px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+@media only screen and (max-width: 600px) {
+
+    .container{
+        font-size: 12px; 
+    }
+
+    input[type='text'] {
+        width: 100%; 
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 0px 0;
+        font-size: 12px;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+  
+  }
+    </style> 
+</body>
+
+</html>

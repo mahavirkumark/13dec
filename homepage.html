@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body{
+        
+
+    background-image: url('jj.png'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevents unwanted scrolling */
+}
+
+        h1{
+            text-align:center;
+
+        }
+        
+    </style>
+    <script type="module" src="homepage.js"></script>
+</head>
+<body>
+   
+   
+
+    <title>Candidate Display</title>
+    <style>
+  
+        .container {
+    display:flex;
+           gap:20px;
+           margin-left: 400px;
+            width: 100%;
+         margin-top: 100px;
+         height:100%;
+        }
+        
+
+        .candidate {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            border-radius: 50%;
+        
+            justify-content: center;
+            
+          overflow: hidden;
+            margin-bottom: 10px;
+       
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .candidate-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Candidate 1 -->
+        <div class="candidate">
+            <div class="circle">
+                <img src="image1.png" alt="Candidate 1">
+            </div>
+            <div class="sandy">Nitin Raut</div>
+        </div>
+        
+        <!-- Candidate 2 -->
+        <div class="candidate">
+            <div class="circle">
+                <img src="image2.png" alt="Candidate 2">
+            </div>
+            <div class="chakori gogala">Veer Kale</div>
+        </div>
+
+        <!-- Candidate 3 -->
+        <div class="candidate">
+            <div class="circle">
+                <img src="image3.png" alt="Candidate 3">
+            </div>
+            <div class="kohinoor billa">Ajay Kamble</div>
+        </div>
+  <div class="candidate">
+            <div class="circle">
+                <img src="image4.jpeg" alt="Candidate 3">
+            </div>
+            <div class="kohinoor billa">Mohit Khode</div>
+        </div>
+        <div class="candidate">
+            <div class="circle">
+                <img src="image5.png" alt="Candidate 3">
+            </div>
+            <div class="kohinoor billa">Yashvant More</div>
+        </div>
+        <div class="k">
+		<form method="post" action="https://script.google.com/macros/s/AKfycbwFOOPrr5wfd0xtn6mxjRRH-depdQ7DDeIb2b8VUO24gs7Kj_E1S4vIsIH2wvvCRMJO/exec" name="contact-form">
+			<h2>Enter Details</h2>
+			<div class="form-group">
+				<label for="full-name">Full Name</label>
+				<input type="text" name="full-name" id="full-name" placeholder="Enter your full name">
+			</div>
+			<div class="form-group">
+				<label for="mobile-number">Mobile Number</label>
+				<input type="text" name="mobile-number" id="mobile-number" placeholder="Enter your mobile number">
+			</div>
+			<div class="form-group">
+				<label for="vote-given-to-party">Vote Given to Party</label>
+				<select name="vote-given-to-party" id="vote-given-to-party">
+              	<option value="BJP">Select Your Vote</option>
+					<option value="BJP">BJP</option>
+					<option value="Congress">Congress</option>
+					<option value="Shiv Sena">Shiv Sena</option>
+                    	<option value="Manse">Manse</option>
+						<option value="Rastravadi congress">Rastravadi congress</option>
+                        <option value="Nota">Nota</option>
+				</select>
+			</div>
+			<input type="submit" value="Submit" id="submit">
+		</form>
+	</div>
+    <div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Blockchain Voting System. All rights reserved.</p>
+            <div class="social-media">
+               
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        function searchFunction() {
+            const query = document.getElementById('search-input').value;
+            alert("Search feature not implemented yet. Query: " + query);
+        }
+ </script>
+<style>
+		/* Container styling */
+		.k{
+			background-color:rgb(172, 102, 238);
+			padding: 20px;
+			border-radius: 10px;
+			width: 550px;
+		display:table-row;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height: 250px;
+            margin-left: -600px;
+            margin-top: 200px;
+            align-items: center;
+		}
+
+		/* Form group styling */
+		.form-group {
+			display: flex;
+			align-items: center;
+			margin-bottom: 15px;
+            height:30px;
+		}
+
+		.form-group label {
+			width: 150px;
+			font-weight: bold;
+            height:40px;
+		}
+
+		.form-group input,
+		.form-group select {
+			flex: 1;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+                 
+		}
+
+		/* Submit button styling */
+		#submit {
+			display: block;
+			margin: 20px auto 0; /* Centered */
+			background-color: #4caf50; /* Green background */
+			color: white;
+			font-size: 16px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 50%; /* Button width */
+            margin-left: 150px ;
+		}
+
+		#submit:hover {
+			background-color: #45a049; /* Darker green on hover */
+		}
+          .footer {
+            background-color:black;
+            color: #fff;
+            padding: 20px;
+            margin-top:525px ;
+            font-size: 14px;
+     margin-left: -1100px;
+            bottom: 0;
+            width: 1590px;
+        
+        }
+        .footer-content {
+            max-width: 2000px;
+          text-align: center;
+            margin-left: 0px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+	</style>
+</head>
+<body>
+	
+
+
+
+
+
+
+
+
+        <script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwxLk9uSvz-XUMuXrFOXfXFvKsQSFyDlNxBfCKIgIbzGfwQ-a3NKpIwGOA1_ZHfrPQA/exec';
+const form = document.forms['contact-form'];
+const submitButton = document.getElementById('submit');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    const fullName = document.getElementById('full-name').value;
+    const mobileNumber = document.getElementById('mobile-number').value;
+    const voteGiven = document.getElementById('vote-given-to-party').value;
+
+    // Check if all fields are filled
+    if (!fullName || !mobileNumber || !voteGiven) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    // Validate mobile number (must be 10 digits)
+    if (mobileNumber.length !== 10 || isNaN(mobileNumber)) {
+        alert("Mobile number must be 10 digits.");
+        return;
+    }
+
+    // Check if a valid party is selected
+    const validParties = ["BJP", "Congress", "Shiv Sena", "Manse", "Rastravadi congress", "Nota"];
+    if (!validParties.includes(voteGiven)) {
+        alert("Please select a valid party: BJP, Congress, Shiv Sena, Manse, Rastravadi congress or Nota.");
+        return;
+    }
+
+    // Disable the submit button to prevent multiple submissions
+    submitButton.disabled = true;
+    submitButton.value = "Submitting..."; // Provide feedback
+
+    // Submit the form data to Google Apps Script
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+    })
+        .then(response => {
+            alert("Thank you! Your vote is submitted.");
+            window.location.href = 'index.html'; // Redirect after submission
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            submitButton.disabled = false; // Re-enable button in case of error
+            submitButton.value = "Submit"; // Reset button text
+        });
+});
+
+
+</script>
+ 
+</body>
+</html>
+
+       
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+       
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+       
+
+       
+
+
+
+
+
